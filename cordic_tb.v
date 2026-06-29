@@ -7,7 +7,7 @@ module cordic_tb;
 
     localparam WIDTH  = 16;
     localparam STAGES = 16;
-    localparam signed [WIDTH-1:0] An = 32767;
+    localparam signed [WIDTH-1:0] An = 16384;
 
     reg                      clk;
     reg                      rst;

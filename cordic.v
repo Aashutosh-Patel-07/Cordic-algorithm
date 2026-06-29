@@ -131,7 +131,7 @@ module cordic #(
     end
 
     assign valid  = valid_shift[STAGES];
-    assign cosine = x_wire[STAGES][WIDTH-1:0];
-    assign sine   = y_wire[STAGES][WIDTH-1:0];
+    assign cosine = x_wire[STAGES][WIDTH:1];
+    assign sine   = y_wire[STAGES][WIDTH:1];
 
 endmodule
