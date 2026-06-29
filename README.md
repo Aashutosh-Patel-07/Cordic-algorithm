@@ -40,13 +40,13 @@ cordic_project/
 | Feature | Baseline (cebarnes/cordic) | This Project |
 |---|---|---|
 | Pipeline stage | Inline generate block | Separate `cordic_stage.v` module |
-| Reset signal | ❌ None | ✅ Active-high synchronous reset |
-| Valid signal | ❌ None | ✅ Asserts after STAGES cycles |
+| Reset signal |  None |  Active-high synchronous reset |
+| Valid signal |  None |  Asserts after STAGES cycles |
 | Testbench angles | 1 angle (others commented out) | 6 angles with pass/fail checking |
 | Output verification | `$monitor` only | Expected value comparison with tolerance |
 | atan table | Inside main module | Separate `atan_table.v` module |
 | Parameterizable | Partially | WIDTH and STAGES both parameterizable |
-| Python verification | ❌ None | ✅ `generate_expected.py` cross-checks values |
+| Python verification |  None |  `generate_expected.py` cross-checks values |
 
 ---
 
@@ -112,6 +112,6 @@ Tolerance: ±200 LSBs (due to fixed-point rounding across 16 pipeline stages)
 
 ## Tools
 
-- **Icarus Verilog** — simulation
-- **GTKWave** — waveform analysis
-- **Python 3** — golden reference and fixed-point value generation
+- **Icarus Verilog** - simulation
+- **GTKWave** - waveform analysis
+- **Python 3** - golden reference and fixed-point value generation
